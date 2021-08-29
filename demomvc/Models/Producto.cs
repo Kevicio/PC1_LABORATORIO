@@ -1,21 +1,45 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+
+
 namespace demomvc.Models
 {
+
+    [Table("t_producto")]
     public class Producto
     {
 
-     public string nombre{
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    
+    [Column("id")]
+        public int Id {
+            get;
+            set;
+        }
+
+        
+    [Column("nombre")]
+     public string Nombre{
         get;
         set;
     }
-    public string categoria{
+
+    [Column("categoria")]
+    public string Categoria{
         get;
         set;
     }
-    public double precio{
+
+    [Column("precio")]
+    public string Precio{
         get;
         set;
     }
-    public string descuento{
+
+    [Column("descuento")]
+    public string Descuento{
         get;
         set;
     }
