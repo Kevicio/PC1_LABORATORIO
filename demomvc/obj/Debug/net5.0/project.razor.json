@@ -15654,6 +15654,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\Views\\Producto\\edit.cshtml",
+      "TargetPath": "Views\\Producto\\edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\Views\\Producto\\create.cshtml",
       "TargetPath": "Views\\Producto\\create.cshtml",
       "FileKind": "mvc"

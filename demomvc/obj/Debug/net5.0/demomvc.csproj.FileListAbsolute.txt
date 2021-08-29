@@ -54,3 +54,4 @@ C:\Users\Soporte\Documents\PC1_LABORATORIO\demomvc\obj\Debug\net5.0\ref\demomvc.
 C:\Users\Soporte\Documents\PC1_LABORATORIO\demomvc\obj\Debug\net5.0\demomvc.pdb
 C:\Users\Soporte\Documents\PC1_LABORATORIO\demomvc\obj\Debug\net5.0\demomvc.genruntimeconfig.cache
 C:\Users\Soporte\Documents\PC1_LABORATORIO\demomvc\obj\Debug\net5.0\Razor\Views\Producto\index.cshtml.g.cs
+C:\Users\Soporte\Documents\PC1_LABORATORIO\demomvc\obj\Debug\net5.0\Razor\Views\Producto\edit.cshtml.g.cs
