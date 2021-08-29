@@ -20,9 +20,12 @@ namespace demomvc.Controllers
         return View();
     }
 
-     public IActionResult Create()
+     public IActionResult Create( Producto objProducto)
     {
-        return View();
+       _context.Add(objProducto);
+       _context.SaveChanges();
+       ViewData["Message"] = "Producto registrado satisfactoriamente";
+       return View("Index");
     }
 
   

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\demomvc.csproj": {}
+    "C:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\demomvc.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\demomvc.csproj": {
+    "C:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\demomvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\demomvc.csproj",
+        "projectUniqueName": "C:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\demomvc.csproj",
         "projectName": "demomvc",
-        "projectPath": "c:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\demomvc.csproj",
+        "projectPath": "C:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\demomvc.csproj",
         "packagesPath": "C:\\Users\\Soporte\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\obj\\",
+        "outputPath": "C:\\Users\\Soporte\\Documents\\PC1_LABORATORIO\\demomvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Soporte\\AppData\\Roaming\\NuGet\\NuGet.Config"
