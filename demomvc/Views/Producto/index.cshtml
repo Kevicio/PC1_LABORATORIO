@@ -1,5 +1,5 @@
+@model IEnumerable<demomvc.Models.Producto>
 
-@model demomvc.Models.Producto
 
 @{
     ViewData["Title"] = "Producto";
@@ -8,45 +8,50 @@
 <h1>@ViewData["Title"]</h1>
 
 
-<div class="text-center">
-    <h1 class="display-4">Datos del Producto</h1>
-    
-  
-    <form asp-controller="Producto" asp-action="Create">
-    <label asp-for="Nombre" class="control-label"></label>
-    <input asp-for="Nombre" class="form-control" type="text" placeholder="Nombre del Producto"/>
+<p>
+    <a asp-action="Create">Create Now</a>
+</p>
 
-    <br>
-    <div class="form-group">
-        <label asp-for="Categoria" class="control-label">Categoria</label>
-        <select asp-for="Categoria">
-            <option value="Accion">Acción</option>
-            <option value="Arcade">Arcade</option>
-            <option value="Estrategia">Estratégia</option>
-            <option value="Aventura">Aventura</option>
-            <option value="Suspenso">Suspenso</option>
-            <option value="Musical">Musical</option>
-            <option value="Deportes">Deportes</option>
-            <option value="Carreras">Carreras</option>
-        </select>
-     </div>  
+<table class="table">
+    <thead>
+        <tr>
+            <th> Edit </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Categoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descuento)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
 
-    <label asp-for="Precio" class="control-label"></label>
-    <input asp-for="Precio" class="form-control" />
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria)
+            </td>
+              <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descuento)
+            </td>
 
-    <label asp-for="Descuento" class="control-label"></label>
-    <input asp-for="Descuento" class="form-control" />
-
-    <br>
-    <div class="form-group">
-        <button type="submit" class="btn btn-success">Registrar</button>
-    </div>
-
-
-    </form>
-    <h1>@ViewData["Message"]</h1>
-     <div>
-        <a asp-action="Index">Back to List</a>
-    </div>
-</div>
-
+        </tr>
+}
+    </tbody>
+</table>

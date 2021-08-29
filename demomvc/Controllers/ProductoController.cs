@@ -17,15 +17,21 @@ namespace demomvc.Controllers
 
     public IActionResult Index()
     {
-        return View();
+        return View(_context.DataProductos.ToList());
     }
 
+    public IActionResult Create()
+    {
+        return View();
+    }
+    
+    [HttpPost]
      public IActionResult Create( Producto objProducto)
     {
        _context.Add(objProducto);
        _context.SaveChanges();
        ViewData["Message"] = "Producto registrado satisfactoriamente";
-       return View("Index");
+       return View();
     }
 
   
